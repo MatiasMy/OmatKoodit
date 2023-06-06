@@ -1,0 +1,13 @@
+header{
+    background-color: black;
+    height: 75px;
+    text-align: center;
+}
+header, h1{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+}
+body{
+    margin: auto auto auto auto;
+}
