@@ -1,18 +1,22 @@
 <?php require "head.html"; ?>
 
-<img src="img/" alt="game view" id="gamview">
+<img src="img/skull.jpg" alt="game view" id="gamview" class="kuva">
 
-<div class="buttons">
-    <div class="button1">
+<div class="puhe1">
+<p calss="puhe">agf</p>
+</div>
+
+<div name="napit">
+    <div name="n1">
+        <button>asfasfasf</button>
+    </div>
+    <div name="n2">
         <button></button>
     </div>
-    <div class="button2">
+    <div name="n3">
         <button></button>
     </div>
-    <div class="button3">
-        <button></button>
-    </div>
-    <div class="button4">
+    <div name="n4">
         <button></button>
     </div>
 </div>
