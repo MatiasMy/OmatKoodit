@@ -42,12 +42,13 @@ body{
 }
 .napit{
     margin-left: 35%;
-    margin-right: 28%;
+    margin-right: 35%;
     display: grid;
     grid-template-columns: auto auto;
     padding: 10px;
     column-gap: 10px;
     row-gap: 10px;
+    height: 80px;
 }
 .n{
     display: inline;
