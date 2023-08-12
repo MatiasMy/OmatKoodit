@@ -6,9 +6,7 @@
 
 #nostopinon kortit listassa
 $nostopino = array("S0", "S1", "S1", "S2", "S2", "S3", "S3", "S4", "S4", "S5", "S5", "S6", "S6", "S7", "S7", "S8", "S8", "S9", "S9", "S+2", "S+2", "S<>", "S<>", "SØ", "SØ", "P0", "P1", "P1", "P2", "P2", "P3", "P3", "P4", "P4", "P5", "P5", "P6", "P6", "P7", "P7", "P8", "P8", "P9", "P9", "P+2", "P+2", "P<>", "P<>", "PØ", "PØ", "V0", "V1", "V1", "V2", "V2", "V3", "V3", "V4", "V4", "V5", "V5", "V6", "V6", "V7", "V7", "V8", "V8", "V9", "V9", "V+2", "V+2", "V<>", "V<>", "VØ", "VØ", "K0", "K1", "K1", "K2", "K2", "K3", "K3", "K4", "K4", "K5", "K5", "K6", "K6", "K7", "K7", "K8", "K8", "K9", "K9", "K+2", "K+2", "K<>", "K<>", "KØ", "KØ", "MX", "MX", "MX", "MX", "M+4", "M+4", "M+4", "M+4");
-
-
-
+$seven = array("1", "2", "3", "4", "5", "6", "7");
 
 $pelipino = array();
 
@@ -16,9 +14,25 @@ $p1kortit = array();
 
 $p2kortit = array();
 
+$nro = 107;
+
+function alkukortit($seven, $nostopino, $nro, $p1kortit){
+    foreach($seven as $s){
+        $rand = rand(0, $nro);
+        $kortti = $nostopino[$rand];
+        array_push($p1kortit, $kortti);
+        #echo $kortti . "<br>";
+        echo implode($p1kortit);
+        echo "<br>";
+    }
+}
+alkukortit($seven, $nostopino, $nro, $p1kortit);
+
+
+
 ?>
 
-#
+
 <div class="pelipino">
 
 </div> <br>
@@ -26,8 +40,13 @@ $p2kortit = array();
 
 <div class="p1">
     <?php
-    foreach ($nostopino as $pinonosto){
-        #tee looppi joka lisää 7 korttia pelaajalle
+    $a = 0;
+    if ($a < 7){
+        $rand = rand(0, $nro);
+        $kortti = $nostopino[$rand];
+        #echo $kortti;
+        $nro = $nro - 1;
+        $a = $a + 1;
     }
 
     ?>
