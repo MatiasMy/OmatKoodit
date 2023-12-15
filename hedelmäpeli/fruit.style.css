@@ -1,0 +1,15 @@
+.fruits {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+  .fruit {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.bet{
+    margin-top: 10%;
+    margin-left: 40%;
+}
